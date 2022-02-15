@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple form</title>
+    <style>
+        body {text-align: center; font-family: "Arial Narrow", sans-serif}
+        form {display: inline-block}
+        h1 {color: #97948e; font-family: "Arial Black", sans-serif}
+        input[type=text] {
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: width 0.4s ease-in-out;
+        }
+        input[type=text]:focus {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Mr. Buck E. Lactose's Annual Milk Inventory
+</h1>
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"> <br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"> <br>
+    <label for="comment">Comment:</label><br>
+    <input type="text" id="comment" name="comment"> <br>
+    <input type="checkbox" id="food1" name="vehicle1" value="Bike">
+    <label for="food1"> I drink milk </label><br>
+    <input type="checkbox" id="food2" name="vehicle2" value="Car">
+    <label for="food2"> I drink milk sometimes </label><br>
+    <input type="checkbox" id="food3" name="vehicle3" value="Boat">
+    <label for="food3"> I am not sure what milk is </label><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
